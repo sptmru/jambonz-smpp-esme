@@ -1,6 +1,4 @@
-FROM --platform=linux/amd64 node:18.14.1-alpine3.16 as base
-
-RUN apk --update --no-cache add --virtual .builds-deps build-base python3
+FROM node:18 as base
 
 WORKDIR /opt/app/
 
